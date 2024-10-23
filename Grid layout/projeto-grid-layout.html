@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout project</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header class="menu-lateral">
+        <div class="links">
+            <ul class="sub-menu">
+                <div id="boxing">
+                    <div class="sidebar"></div>
+                    <h1>Grid Container</h1>
+                </div>
+                <li><a href="#">Display</a></li>
+                <li><a href="#">Grid-template-rows</a></li>
+                <li><a href="#">Grid-template-areas</a></li>
+                <li><a href="#">Grid-template-columns</a></li>
+                <li><a href="#">Gap</a></li>
+                <li><a href="#">Grid-auto-columns</a></li>
+                <li><a href="#">Grid-auto-rows</a></li>
+                <li><a href="#">Grid-auto-flow</a></li>
+                <li><a href="#">Grid</a></li>
+                <li><a href="#">Justify-content</a></li>
+                <li><a href="#">Align-content</a></li>
+                <li><a href="#">Justify-items</a></li>
+                <li><a href="#">Align-items</a></li>
+            </ul>
+            <ul class="sub-menu">
+                <h1>Grid Items</h1>
+                <li><a href="#">Grid-columns</a></li>
+                <li><a href="#">Grid-rows</a></li>
+                <li><a href="#">Grid-area</a></li>
+                <li><a href="#">Justify-self</a></li>
+                <li><a href="#">Align-self</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero contant  -->
+
+    <main class="main-content">
+        <section class="sec">
+            <div class="camp-visual">
+                <div class="dis-block line">
+                    <div class="ft-200">Display Block</div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+                <div class="dis-block">
+                    <div class="ft-200">Display Grid</div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+            </div>
+            <!-- Campo descritivo -->
+            <div class="camp-description">
+                <div class="desc">
+                    <div class="ft-300 fw-500">1.Display</div>
+                    <div class="ft-400">Define o elemento como grid</div>
+                </div>
+                <div class="desc">
+                    <div>
+                        <div class="ft-300 fw-500">display: grid;</div>
+                        <div class="ft-400">//Torna o elemento um grid container</div>
+                    </div>
+                    <div>
+                        <div class="ft-300 fw-500">display: inline-grid</div>
+                        <div class="ft-400">//Torna o elemento grid em linha</div>
+                    </div>
+                    <div>
+                        <div class="ft-300 fw-500">display: sub-grid;</div>
+                        <div class="ft-400">//Para grids dentro de grids</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Grid template rows -->
+
+        <section class="sec">
+            <div class="camp-visual flex">
+                <div class="ft-100 fw-600">Grid template columns</div>
+                <div class="grid-rows">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+            </div>
+            <!-- Campo descritivo -->
+            <div class="camp-description">
+                <div class="desc">
+                    <div class="ft-300 fw-500">2.Grid template rows</div>
+                    <div class="ft-400">//Define a quantidade de linhas no grid</div>
+                </div>
+                <div class="desc">
+                    <div>
+                        <div class="ft-300 fw-500">grid-template-rows: 200px 200px</div>
+                        <div class="ft-400">// Cria 2 linhas no grid, sendo a primeira com 50px, segunda 50px,</div>
+                    </div>
+                    <div>
+                        <div class="ft-300 fw-500">grid-template-rows: 1fr 1fr</div>
+                        <div class="ft-400">// Cria 2 linhas no grid, sendo a segunda com cerca de duas vezes o tamanho da primeira.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Grid template areas -->
+
+        <section class="sec">
+            <div class="camp-visual flex">
+                <div class="ft-100 fw-600">Grid template areas</div>
+                <div class="grid-areas">
+                    <div class="box1">1</div>
+                    <div class="box2">2</div>
+                    <div class="box3">3</div>
+                    <div class="box4">4</div>
+                    <div class="box5">5</div>
+                    <div class="box6">6</div>
+                </div>
+            </div>
+            <!-- Campo descritivo -->
+            <div class="camp-description">
+                <div class="desc">
+                    <div class="ft-300 fw-500">3.Grid-template-areas</div>
+                    <div class="ft-400">Define áreas específicas no grid. O ponto (.) pode ser utilizado para criar áreas vazias.</div>
+                </div>
+
+                <div class="desc">
+                    <div>
+                        <div class="ft-300 fw-500">grid-template-areas: <br>“area1 area2 area3”;</div>
+                        <div class="ft-400">//Cria uma ordem especifica de posição</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Grid template columns -->
+
+        <section class="sec">
+            <div class="camp-visual flex">
+                <div class="ft-100 fw-600">Grid Template Columns</div>
+                <div class="grid-columns">
+                    <div class="box">1</div>
+                    <div class="box">2</div>
+                </div>
+            </div>
+
+            <!-- Campo descritivo -->
+            <div class="camp-description">
+                <div class="desc">
+                    <div class="ft-300 fw-500">4. Grid-template-column</div>
+                    <div class="ft-400">Define o tamanho das colunas do grid implícito (gerado automaticamente, quando algum elemento é posicionado em uma coluna que não foi definida).</div>
+                </div>
+                <div class="desc">
+                    <div>
+                        <div class="ft-300 fw-500">grid-auto-columns: 200px 200px</div>
+                        <div class="ft-400">//As colunas implícitas, geradas automaticamente, terão 100px de largura.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gap -->
+
+        <section class="sec">
+            <div class="camp-visual flex">
+                <div class="ft-100 fw-600">Gap</div>
+                <div class="grid-columns gap">
+                    <div class="box">1</div>
+                    <div class="box">2</div>
+                </div>
+            </div>
+            <!-- Campo descritivo -->
+            <div class="camp-description">
+                <div class="desc">
+                    <div class="ft-300 fw-500">5.Gap</div>
+                    <div class="ft-400">Define um espaçamento entre os elementos do grid</div>
+                </div>
+
+                <div class="desc">
+                    <div>
+                        <div class="ft-300 fw-500">Gap: 20px;</div>
+                        <div class="ft-400">// Define 20px entre os elementos do grid (linha e coluna).</div>
+                    </div>
+                    <div>
+                        <div class="ft-300 fw-500">Column-gap: 20px;</div>
+                        <div class="ft-400">// Define 20px de distância entre as colunas.</div>
+                    </div>
+                    <div>
+                        <div class="ft-300 fw-500">row-gap: 20px;</div>
+                        <div class="ft-400">// Define 20px de distância entre as linhas</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

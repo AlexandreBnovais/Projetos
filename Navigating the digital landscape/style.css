@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100..900&display=swap');
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+li, a{
+  text-decoration: none;
+  list-style: none;
+  color: var(--ft-color-primary);
+}
+
+body, html {
+    height: 100%;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background-color: var(--bg-color-primary);
+  font-family: "epilogue" , "sans-serif";
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:root {
+  --bg-color: hsl(0, 0%, 98%);
+  --ft-color-primary: hsl(0, 0%, 41%);
+  --ft-color-secundary: hsl(0, 0%, 8%);
+  --fw-500: 500;
+  --fw-700: 700;
+
+  /*Desktop Font-size  */
+  --fs-100: .875rem;
+  --fs-200: 1.125rem;
+  --fs-300: clamp(2.5rem, 5vw + 10px, 10rem);
+
+  /* Mobile Font-size */
+  --fs-400: var(--fs-100);
+  --fs-500: 2.5rem;
+}
+
+.fs-navigating {
+  font-size: var(--fs-100);
+}
+.fs-body {
+  font-size: var(--fs-200);
+}
+.fs-heading {
+  font-size: var(--fs-300);
+}
+.fw-bold {
+  font-weight: var(--fw-500);
+}
+.fw-extra-bold {
+  font-weight: var(--fw-700);
+}
+
+.header-container {
+  max-width: 100%;
+  width: 95%;
+  margin: auto;
+  min-height: 100px;
+}
+
+.menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-list li {
+  display: block;
+  margin-left: 3rem;
+}
+
+.user-painel {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.btn-register {
+  padding: 10px 1.25rem;
+  background: none;
+  border-radius: 15px;
+}
+
+
+/* Main Content */
+.main-container {
+  width: 80%;
+  max-width: 100%;
+  min-height: calc(100vh - 160px);
+  margin: auto;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.section-text {
+  min-height: auto;
+}
+
+.section-text h1 {
+  line-height: ;
+}
+
+.section-text p {
+  margin: 2rem 0;
+  max-width: 450px;
+  text-align: justify;
+  color: var(--ft-color-primary); 
+}
+
+.btn-learn {
+  padding: 10px 2rem;
+  background: #000;
+  color: var(--bg-color);
+  font-size: var(--fs-200);
+  font-weight: var(--fw-500);
+  border-radius: 15px;
+  margin-bottom: 2rem; 
+  cursor: pointer;
+}
+
+.box-images {
+  display: flex;
+  align-items: center;
+  flex: 1 1 100px;
+  flex-wrap: wrap;
+  gap: 10px 2rem;
+  position: relative;
+  top: 50px;
+}
+
+.section-image {
+  max-width: 450px;
+  min-height: auto;
+}
+
+@media screen and (max-width: 750px) {
+  .menu-list {
+    display: none;
+  }
+
+  .hero-container {
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 100%;
+  }
+
+}
