@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins" , "sans-serif";
+}
+
+:root {
+    --background-color: #262626;
+    --text-color: #ffff;
+    --ft-100: 1rem;
+    --ft-200: 1.25rem;
+    --ft-300: 1.5rem;
+    --ft-400: 2rem;
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+}
+
+.ft-100 {
+    font-size: var(--ft-100);
+}
+.ft-200 {
+    font-size: var(--ft-200);
+}
+.ft-300 {
+    font-size: var(--ft-300);
+}
+.ft-400 {
+    font-size: var(--ft-400);
+}
+.fw-400 {
+    font-weight: var(--fw-400);
+}
+.fw-500 {
+    font-weight: var(--fw-500);
+}
+.fw-600 {
+    font-weight: var(--fw-600);
+}
+
+body,html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    min-height: 100vh;
+    max-width: 100%;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+    gap: 15rem;
+    min-height: 100%;
+    width: auto;
+}
+
+.box-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1100px;
+    height: 600px;
+    border: 1px solid #ffff;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: var(--text-color);
+}
+
+.flex-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.dis-flex {
+    display: flex;
+    gap: 40px;
+    width: auto;
+}
+
+.dis-flex > div {
+    width: 100px; height: 100px;
+    background-color: var(--background-color);
+    border-radius: 5px;
+}
+
+/* Description area */
+
+.box-content .box-description {
+    display: flex;
+    gap: 20px;
+    height: 250px; width: 100%;
+}
+
+.box-content .desc-content {
+    flex: 1 1 100px;
+    padding: 20px;
+    color: var(--text-color);
+    border-radius: 10px;
+    background-color: var(--background-color);
+}
+
+.box-content .desc-content .ft-200 {
+    margin-bottom: 10px;
+}
+
+/* Flex Direction */
+.flex-direction {
+    display: flex;
+    gap: 5rem;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.box-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-direction .row {
+    display: flex;
+    gap: 1rem;
+}
+
+.flex-direction .row > div {
+    width: 100px;
+    height: 50px;
+    background-color: var(--background-color);
+}
+
+.flex-direction .column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.flex-direction .column > div {
+    width: 300px;
+    height: 50px;
+    background-color: var(--background-color);
+}
+
+/* Justify Content */
+.flex-description {
+    display: flex;
+    gap: 6rem;
+}
+
+.ext {
+    background-color: #262626;
+    color: #ffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.desc-ext {   
+    text-align: justify;
+    flex: 1 1 100vw;
+}
+
+.desc-ext .ft-200 {
+    margin: 10px 0;
+}
