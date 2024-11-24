@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+:root {
+    --background-color: #B4D7B1;
+    --Comp-color: #248234;
+    --text-color: #101010;
+    --ft-100: 2rem;
+    --ft-200: 1.5rem;
+    --ft-300: 1rem;
+    --fw-100: 400;
+    --fw-200: 500;
+    --fw-300: 600;
+}
+
+body,html {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    width: 100%;
+    min-height: 100vh;
+    font-family: "noto-serif" , "noto-sans";
+    
+}
+
+li, a {
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--text-color);
+    font-size: 1.2rem;
+}
+
+img, svg { 
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background-color);
+    height: 100px;
+    padding: 25px 50px;
+}
+
+header > .logo { 
+    max-width: 200px;
+    width: 100%;
+}
+
+header > .menu {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+/* Main Content */
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    max-width: 100%;
+    margin: 0 50px;
+}
+
+main > .sec1 {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    gap: 5rem;
+}
+
+main > .sec1 > .img-item {
+    max-width: 800px;
+    min-height: auto;
+    flex: 1;
+}
+
+main > .sec1 > .item-box-desc {
+    flex: 1;
+}
+
+main > .sec1 > .item-box-desc > p {
+    max-width: 500px;
+    text-align: justify;
+    margin-bottom: 2rem;
+    font-size: var(--ft-200);
+}
+
+.btn-link {
+    padding: 1rem 2.5rem;
+    transition: .1s ease-in;
+    cursor: pointer;
+    border: none;
+    background-color: var(--Comp-color);
+}
+
+.btn-link > a {
+    color: #fff;
+}
+
+.btn-link:hover {
+    background-color: #2ba82c;
+    transition: .1s ease-in;
+}
+
+
+main > .sec2 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* Aside Content */
+
+aside { 
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 20px 0;
+    background-color: var(--background-color);
+}
+
+aside > .area-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 600px;
+    flex: 1;
+}
+
+aside > .area-desc > div {
+    max-width: 100%;
+}
+
+aside > .area-desc > div > img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+aside > .area-desc > p {
+    max-width: 300px;
+    text-align: justify;
+    font-size: var(--ft-200);
+}
+ 
+/* Video Content */
+
+.bird-item {
+    position: absolute;
+    left: -20%;
+    transform: rotateZ(10deg);
+    z-index: 0;
+    width: 650px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    height: 100%;
+}
+
+
+.video-container > .video-item {
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    max-width: 100%;
+}
+
+.video-container > .video-item > p {
+    font-size: var(--ft-200);
+    max-width: 750px;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.video-container > .video-item > .logo-sos {
+    height: 200px;
+    width: 200px;
+}
+
+
+/* Footer Content */
+
+footer {
+    display: flex;
+    justify-content: center;
+    min-height: 800px;
+    background-image: url(/Assents/quem-somos-jpg_1.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+footer .sobre { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    max-width: 800px;
+}
+
+footer .sobre  h1 {
+    margin: 20px 0;
+    font-size: var(--ft-100);
+    font-weight: var(--fw-200);
+}
+
+footer .sobre  p {
+    font-size: var(--ft-200);
+    font-weight: var(--fw-100);
+    line-height: 30px;
+    text-align: justify;
+}
