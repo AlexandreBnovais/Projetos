@@ -24,9 +24,10 @@ body,html {
     flex-direction: column;
     gap: 10rem;
     width: 100%;
+    margin: auto;
     min-height: 100vh;
     font-family: "noto-serif" , "noto-sans";
-    
+    line-height: 30px;
 }
 
 li, a {
@@ -187,7 +188,6 @@ aside > .area-desc > p {
     font-size: var(--ft-200);
     max-width: 750px;
     text-align: justify;
-    line-height: 30px;
 }
 
 .video-container > .video-item > .logo-sos {
@@ -200,8 +200,7 @@ aside > .area-desc > p {
 
 footer {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     min-height: 1000px;
 }
@@ -210,6 +209,7 @@ footer .sobre {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: auto;
     gap: 50px;
     max-width: 800px;
 }
@@ -223,6 +223,5 @@ footer .sobre  h1 {
 footer .sobre  p {
     font-size: var(--ft-200);
     font-weight: var(--fw-100);
-    line-height: 30px;
     text-align: justify;
 }
