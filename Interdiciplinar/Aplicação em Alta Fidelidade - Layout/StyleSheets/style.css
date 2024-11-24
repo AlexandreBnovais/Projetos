@@ -200,11 +200,10 @@ aside > .area-desc > p {
 
 footer {
     display: flex;
-    justify-content: center;
-    min-height: 800px;
-    background-image: url(/Assents/quem-somos-jpg_1.jpg);
-    background-repeat: no-repeat;
-    background-position: bottom;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 1000px;
 }
 
 footer .sobre { 
