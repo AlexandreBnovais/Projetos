@@ -152,7 +152,6 @@ aside > .area-desc > div > img {
 
 aside > .area-desc > p {
     max-width: 300px;
-    text-align: justify;
     font-size: var(--ft-200);
 }
  
